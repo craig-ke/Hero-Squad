@@ -53,5 +53,4 @@ public class HeroTest {
         Hero secondHero = new Hero("Batman",50,"Strength","Women");
         assertEquals(Hero.find(secondHero.getId()), secondHero);
     }
-
 }
