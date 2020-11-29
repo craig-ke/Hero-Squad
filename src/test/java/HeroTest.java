@@ -42,5 +42,11 @@ public class HeroTest {
         Hero.clear();
         assertEquals(Hero.all().size(), 0);
     }
+    @Test
+    public void getId_returnsHeroID_1() {
+        Hero testHero = new Hero("Loki",34,"Mischief","Wine");
+        assertEquals(1, testHero.getId());
+    }
+
 
 }
