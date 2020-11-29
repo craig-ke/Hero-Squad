@@ -2,6 +2,7 @@ import org.junit.After;
 import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertTrue;
 
 public class SquadTest {
     @After
@@ -51,5 +52,12 @@ public class SquadTest {
     public void getHeroes_initiallyReturnsEmptyList_ArrayList() {
         Squad testSquad = new Squad("Avengers",12,"Protect Earth");
         assertEquals(0, testSquad.getHeroes().size());
+    }
+    @Test
+    public void addHero_addsHeroToList_true() {
+        Squad testSquad = new Squad("Avengers",12,"Protect Earth");
+        Hero testHero = new Hero("Thor",20,"Thunder","Weak without his Hammer");
+        testSquad.addHero(testHero);
+        assertTrue(testSquad.getHeroes().contains(testHero));
     }
 }
