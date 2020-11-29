@@ -36,4 +36,11 @@ public class HeroTest {
         assertEquals(true, Hero.all().contains(firstHero));
         assertEquals(true, Hero.all().contains(secondHero));
     }
+    @Test
+    public void clear_emptiesInstancesFromArrayList_0() {
+        Hero testHero = new Hero("Loki",34,"Mischief","Wine");
+        Hero.clear();
+        assertEquals(Hero.all().size(), 0);
+    }
+
 }
