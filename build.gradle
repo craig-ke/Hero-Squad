@@ -1,13 +1,15 @@
 plugins {
     id 'java'
-//    id 'App'
+    id 'application'
 }
 
 group 'com.craig'
 version '1.0-SNAPSHOT'
 
 sourceCompatibility = 1.8
-//mainClassName= 'App'
+applicationName="app"
+mainClassName= "App"
+archivesBaseName = "hero-squad"
 
 repositories {
     mavenCentral()
