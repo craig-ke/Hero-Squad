@@ -47,4 +47,9 @@ public class SquadTest {
         Squad secondSquad = new Squad("Guardians of the galaxy",7,"Ensure the whole universe is safe");
         assertEquals(Squad.find(secondSquad.getId()), secondSquad);
     }
+    @Test
+    public void getHeroes_initiallyReturnsEmptyList_ArrayList() {
+        Squad testSquad = new Squad("Avengers",12,"Protect Earth");
+        assertEquals(0, testSquad.getHeroes().size());
+    }
 }
