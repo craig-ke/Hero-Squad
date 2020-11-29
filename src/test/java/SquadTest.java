@@ -36,5 +36,9 @@ public class SquadTest {
         assertEquals(true, Squad.all().contains(firstSquad));
         assertEquals(true, Squad.all().contains(secondSquad));
     }
-
+    @Test
+    public void getId_returnsSquadId_1() {
+        Squad testSquad = new Squad("Avengers",12,"Protect Earth");
+        assertEquals(1, testSquad.getId());
+    }
 }
