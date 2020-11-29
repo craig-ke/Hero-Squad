@@ -60,4 +60,13 @@ public class SquadTest {
         testSquad.addHero(testHero);
         assertTrue(testSquad.getHeroes().contains(testHero));
     }
+    @Test
+    public void heroAlreadyExists_checksIfHeroExists_true() {
+        Squad testSquad = new Squad("Avengers",12,"Protect Earth");
+        Hero firstHero = new Hero("Thor",20,"Thunder","Weak without his Hammer");
+        Hero secondHero = new Hero("Thor",20,"Thunder","Weak without his Hammer");
+        testSquad.addHero(firstHero);
+        testSquad.addHero(secondHero);
+        assertTrue(testSquad.heroAlreadyExists(secondHero));
+    }
 }
