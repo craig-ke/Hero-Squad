@@ -9,4 +9,11 @@ public class HeroTest {
         Hero testHero = new Hero("Loki",34,"Mischief","Wine");
         assertEquals(true, testHero instanceof Hero);
     }
+    @Test
+    public void getName_returnsHeroName_String() {
+        Hero testHero = new Hero("Loki",34,"Mischief","Wine");
+        assertEquals("Loki", testHero.getName());
+    }
+
+
 }
