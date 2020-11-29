@@ -19,5 +19,9 @@ public class HeroTest {
         Hero testHero = new Hero("Loki",34,"Mischief","Wine");
         assertEquals(34, testHero.getAge());
     }
-
+    @Test
+    public void getPower_returnsHeroPower_String() {
+        Hero testHero = new Hero("Loki",34,"Mischief","Wine");
+        assertEquals("Mischief", testHero.getPower());
+    }
 }
