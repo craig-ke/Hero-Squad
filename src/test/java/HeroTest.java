@@ -14,6 +14,10 @@ public class HeroTest {
         Hero testHero = new Hero("Loki",34,"Mischief","Wine");
         assertEquals("Loki", testHero.getName());
     }
-
+    @Test
+    public void getAge_returnsHeroAge_int() {
+        Hero testHero = new Hero("Loki",34,"Mischief","Wine");
+        assertEquals(34, testHero.getAge());
+    }
 
 }
