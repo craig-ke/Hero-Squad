@@ -24,5 +24,10 @@ public class SquadTest {
         Squad testSquad = new Squad("Avengers",12,"Protect Earth");
         assertEquals(12, testSquad.getSize());
     }
+    @Test
+    public void getMission_returnsSquadMission_String() {
+        Squad testSquad = new Squad("Avengers",12,"Protect Earth");
+        assertEquals("Protect Earth", testSquad.getMission());
+    }
 
 }
