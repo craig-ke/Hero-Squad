@@ -29,5 +29,12 @@ public class SquadTest {
         Squad testSquad = new Squad("Avengers",12,"Protect Earth");
         assertEquals("Protect Earth", testSquad.getMission());
     }
+    @Test
+    public void all_returnsAllInstancesOfSquad_true() {
+        Squad firstSquad = new Squad("Avengers",12,"Protect Earth");
+        Squad secondSquad = new Squad("Guardians of the galaxy",7,"Ensure the whole universe is safe");
+        assertEquals(true, Squad.all().contains(firstSquad));
+        assertEquals(true, Squad.all().contains(secondSquad));
+    }
 
 }
