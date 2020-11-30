@@ -1,11 +1,11 @@
 
 body{
-
-    background: #0e4269 ;
+   background-image: url("../src/main/resources/public/images/design.png");
+    backroung: #F5F5F5;
     background-position:center;
     background-size:contain;
     color:black;
-    font-family:monospace;
+   font-family: 'Fredoka One', cursive;
 
 }
 
@@ -73,7 +73,7 @@ margin:auto;
 
 }
 .create .btn{
-margin-right:30px;
+margin-right:40px;
 
 }
 .form input{
@@ -90,3 +90,5 @@ padding-bottom:20px;
 padding-top:20px;
 margin-top:50px;
 }
+.navbar navbar-dark bg-dark{
+font-size: 20px:}
