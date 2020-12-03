@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Hero Squad{{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/app.css">
+</head>
+<body>
+<ul class="navbar navbar-dark bg-dark ">
+    <li  class="active"><a href="/"><h3>Home</h3></a></li>
+    <li  class="active"><a href="/hero"><h3>View Heroes</h3></a></li>
+    <li  class="active"><a href="/squad"><h3>View Squads</h3></a></li>
+</ul>
+<div class="container-fluid">
+    <!--begin main template-->
+
+    <div class="main-content">
+        {{#block "content"}}
+        {{/block}}
+
+    </div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    </body>
+    </html>
+{{/block}}
